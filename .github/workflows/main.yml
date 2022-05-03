@@ -26,6 +26,8 @@ jobs:
     steps:
     - name: Run Bridgecrew 
       uses: actions/checkout@v2
+    
+    - name:  
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
