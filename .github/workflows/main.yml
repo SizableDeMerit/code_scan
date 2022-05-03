@@ -31,7 +31,7 @@ jobs:
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
-        #api-key: ${{ secrets.API_KEY }}
+        api-key: ${{ secrets.API_KEY }}
         soft_fail: true
         sarif_file: results.sarif
     - name: Expose report
