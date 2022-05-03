@@ -8,6 +8,7 @@
 # management by Terraform. This means that any ingress or egress rules added or changed will be detected as drift.
 # ADDING LINE FOR CODE SCAN TEST
 # ADDING LINE FOR CODE SCAN TEST
+# ADDING LINE FOR CODE SCAN TEST
 
 
 resource "aws_vpc" "mainvpc" {
