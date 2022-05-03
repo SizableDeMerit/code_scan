@@ -1,8 +1,5 @@
 # This is a workflow to help you setup Bridgecrew in github code scanning 
 
-
-
-
 name: Bridgecrew
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -31,7 +28,7 @@ jobs:
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master
       with:
-        #api-key: ${{ secrets.API_KEY }}
+        api-key: ${{ secrets.API_KEY }}
         soft_fail: true
         sarif_file: results.sarif
     - name: Expose report
