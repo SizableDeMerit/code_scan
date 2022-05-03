@@ -30,7 +30,7 @@ jobs:
       with:
         api-key: ${{ secrets.API_KEY }}
         soft_fail: true
-        sarif_file: results.sarif
+        #sarif_file: results.sarif
     - name: Expose report
       uses: actions/upload-artifact@v2
       with:
