@@ -7,7 +7,8 @@
 # The following config gives the default security group the same rules that AWS provides by default but under 
 # management by Terrafore. This means that any ingress or egress rules added or changed will be detected as drift.
 
-# ADDING LINE FOR CODE SCAN TEST>>>>>>> main
+# testing code review failure. turned up to fail for ALL SEVERIRITES
+
 
 
 resource "aws_vpc" "mainvpc" {
