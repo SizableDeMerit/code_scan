@@ -5,8 +5,9 @@
 # We recommend that your default security group restricts all inbound and outbound traffic.
 # FROM TERRAFORM 
 # The following config gives the default security group the same rules that AWS provides by default but under 
-# management by Terraform. This means that any ingress or egress rules added or changed will be detected as drift.
-# ADDING LINE FOR CODE SCAN TEST
+# management by Terrafore. This means that any ingress or egress rules added or changed will be detected as drift.
+
+# ADDING LINE FOR CODE SCAN TEST>>>>>>> main
 
 
 resource "aws_vpc" "mainvpc" {
