@@ -191,6 +191,7 @@ EOF
     git_repo             = "yor_lamb_drift"
     yor_trace            = "ee37c4ed-d943-446e-9f53-7022a8fd48b0"
   }
+  ebs_optimized = true
 }
 
 
