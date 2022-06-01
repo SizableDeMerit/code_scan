@@ -5,11 +5,10 @@
 # We recommend that your default security group restricts all inbound and outbound traffic.
 # FROM TERRAFORM 
 # The following config gives the default security group the same rules that AWS provides by default but under 
-# management by Terraform. This means that any ingress or egress rules added or changed will be detected as drift.
-# ADDING LINE FOR CODE SCAN TEST
-# ADDING LINE FOR CODE SCAN TEST
-# ADDING LINE FOR CODE SCAN TEST
-# ADDING LINE FOR CODE SCAN TEST
+# management by Terrafore. This means that any ingress or egress rules added or changed will be detected as drift.
+
+# testing code review failure. turned up to fail for ALL SEVERIRITES
+
 
 
 resource "aws_vpc" "mainvpc" {
@@ -491,6 +490,16 @@ resource "aws_s3_bucket" "flowbucket" {
     yor_trace            = "f058838a-b1e0-4383-b965-7e06e987ffb1"
   })
 }
+
+
+resource "aws_s3_bucket_versioning" "flowbucket" {
+  bucket = aws_s3_bucket.flowbucket.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
 
 # output "ec2_public_dns" {
 #   description = "Web Host Public DNS name"
