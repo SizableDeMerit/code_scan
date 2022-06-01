@@ -32,7 +32,7 @@ jobs:
         soft_fail: true
         #sarif_file: results.sarif
     - name: Expose report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v1
       with:
         name: SARIF results
         path: results.sarif
